@@ -7,5 +7,5 @@ let r:f64 = 10.00;
 let a = p * (1.0 + (r/100.0)) * n;
 println!("the amount is {}", a );
 let ci = a - p;
-println!("the compound {}", ci );
+println!("the compound interest is {}", ci );
 }
