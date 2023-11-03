@@ -1,4 +1,0 @@
-fn main() {
-	let name:char = "ye";
-	println!("The name is {}", name); 
-}
