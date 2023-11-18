@@ -22,6 +22,10 @@ fn main(){
 	if d > 0.0
 	{
 		println!("\nThe equation has two distinct roots");
+		let roots1:f64 = (-b + d.powf(0.5)) / 2.0;
+	let roots2:f64 = (-b - d.powf(0.5)) / 2.0;
+
+	println!("\nThe roots of the equation are {} and {}",roots1 ,roots2 );
 	}
 
 	else if d < 0.0
@@ -31,14 +35,12 @@ fn main(){
 
 	else if d == 0.0 {
 		println!("\nThe equation has only one real root");
+		let roots:f64 = (-b + d.powf(0.5)) / 2.0;
+		println!("\nThe root of the equation is {} ",roots );
 	}
 	else {
 		println!("ERROR");
 	}
-	let roots1:f64 = (-b + d.powf(0.5)) / 2.0;
-	let roots2:f64 = (-b - d.powf(0.5)) / 2.0;
-
-	println!("\nThe roots of the equation are {} and {}",roots1 ,roots2 );
 
 
 }
