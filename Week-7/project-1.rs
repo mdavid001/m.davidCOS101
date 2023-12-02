@@ -20,7 +20,7 @@ fn trapezium(){
 	let input3:f64 = i3.trim().parse().expect("Not a valid number");
 
 	let a = (input1 / 2.0) * (input2 + input3);
-	println!("The area of the trapezium is {}",a );
+	println!("The area of the trapezium is {} cm^2.",a );
 
 }
 
@@ -39,7 +39,7 @@ fn rhombus(){
 	let input2:f64 = i2.trim().parse().expect("Not a valid number");
 
 	let a = 0.5 * input1 * input2;
-	println!("The area of the rhombus is {}",a );
+	println!("The area of the rhombus is {} cm^2.",a );
 
 }
 
@@ -58,7 +58,7 @@ fn parallelogram(){
 	let input2:f64 = i2.trim().parse().expect("Not a valid number");
 
 	let a = input1 * input2;
-	println!("The area of the parallelogram is {}",a );
+	println!("The area of the parallelogram is {} cm^2.",a );
 
 }
 
@@ -72,7 +72,7 @@ fn cube(){
 	let input1:f64 = i1.trim().parse().expect("Not a valid number");
 
 	let a = 6.0 * input1 * input1;
-	println!("The area of the cube is {}",a );
+	println!("The area of the cube is {} cm^2.",a );
 
 }
 
@@ -91,7 +91,7 @@ fn cylinder(){
 	let input2:f64 = i2.trim().parse().expect("Not a valid number");
 
 	let v = (22.0 / 7.0) * input1 * input1 * input2;
-	println!("The volume of the cylinder is {}",v );
+	println!("The volume of the cylinder is {} cm^2.",v );
 
 }
 
