@@ -9,6 +9,6 @@ fn main(){
 	let v = vec!["Grace","Effiong","Basil","Kareem","Susan"];
 
 	//printing the size of a vector
-	println!("\nThe length of vec macro is : {}",v.len());
+	print!("\nThe length of vec macro is : {}",v.len());
 
 }
