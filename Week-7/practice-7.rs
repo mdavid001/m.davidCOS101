@@ -14,7 +14,7 @@ fn main(){
 
 	//array with default values that create and 
 	//initialises all its elements with a default value of -1.
-	let arr3:[i32;2] = [-1,8];
+	let arr3:[i32;8] = [-1;8];
 	println!("\nArray with default values");
 	println!("array is : {:?}",arr3);
 	println!("array size is : {}",arr3.len());

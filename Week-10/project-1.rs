@@ -33,8 +33,7 @@ display(input4);
 
 fn display(input:Electronics){
 		println!("Name of brand: {} electronics\nPrice of laptops: {} \nQuantity of laptops available: {}",input.name, input.price, input.qty );
-        println!("\nYou have decided to buy three laptops from each brand ");
-        println!("Invoice:");
+        
         println!("3 {} laptops : 3 x {} = {} ",input.name, input.price, 3.0*input.price );
 
 }
