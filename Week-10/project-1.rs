@@ -1,39 +1,24 @@
-struct Electronics{
-	name:String,
-	price:f64,
-	qty:i32
+struct Computers {
+     hp:f32,
+     ibm:f32,
+     toshiba:f32,
+     dell:f32
 }
 
-fn main(){
-	let input1 = Electronics{
-		name:String::from("HP"),
-		price:650000.00,
-		qty:10
-	};
-	let input2 = Electronics{
-		name:String::from("IBM"),
-		price:755000.00,
-		qty:6
-	};
-    let input3 = Electronics{
-		name:String::from("Toshiba"),
-		price:550000.00,
-		qty:10
-	};
-	let input4 = Electronics{
-		name:String::from("Dell"),
-		price:850000.00,
-		qty:4
-	};
-display(input1);
-display(input2);
-display(input3);
-display(input4);
+impl Computers {
+    fn sum(&self) -> f32 {
+        self.hp * 3.0 + self.ibm * 3.0 + self.toshiba * 3.0 + self. dell * 3.0
+    }
 }
 
-fn display(input:Electronics){
-		println!("Name of brand: {} electronics\nPrice of laptops: {} \nQuantity of laptops available: {}",input.name, input.price, input.qty );
-        
-        println!("3 {} laptops : 3 x {} = {} ",input.name, input.price, 3.0*input.price );
+fn main() {
+    let cost = Computers {
+      hp: 650000.0,
+      ibm: 755000.0,
+      toshiba: 550000.0,
+      dell: 850000.0,
+    };
+
+    println!("The total cost of the computers is {}", cost.sum());
 
 }
